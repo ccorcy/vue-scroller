@@ -30,7 +30,7 @@ function getContentRender(content) {
   if (helperElem.style[perspectiveProperty] !== undef) {
 
     return function(left, top, zoom) {
-      content.style[transformProperty] = 'translate3d(' + (-left) + 'px,' + (-top) + 'px,0) scale(' + zoom + ')';
+      content.style[transformProperty] = 'translate3d(' + (-left) + 'px,' + (-top) + 'px,0) scale(' + zoom + ') rotate(0deg)';
     };
 
   } else if (helperElem.style[transformProperty] !== undef) {
